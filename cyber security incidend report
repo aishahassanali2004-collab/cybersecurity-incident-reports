@@ -1,0 +1,9 @@
+# Cybersecurity Incident Report: Network Attack Analysis
+
+## Section 2: How the Attack Caused Malfunction
+1. **Three-Way Handshake Exploitation:** When website visitors try to establish a connection, a three-way handshake occurs using the TCP protocol. Attackers used packet sniffing to capture and flood data packets in transit.
+2. **Server Disruption:** The IT team had to take the server offline temporarily so the machine could recover and return to normal operating status.
+3. **Firewall Mitigation:** Configured the company firewall to block the malicious IP address that was sending the abnormal number of SYN requests.
+
+## Key Findings & Logs Summary
+The network logs indicate an overwhelming number of incomplete TCP SYN requests coming from a suspicious IP address. These requests never completed the final ACK step, exhausting the server's connection queue and resources, leading to a Denial of Service (DoS).
